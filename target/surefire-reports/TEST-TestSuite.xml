@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="250.405" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="-t @VISO-3236"/>
+    <property name="java.vm.version" value="15.0.2+7-27"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Datos\Oliver\Solera\AgileTestingSpecialist\Tdp\Automation\Devops\DevOps-MVP\Visor\automation_test_web_visor"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="PE"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Datos\Oliver\Solera\AgileTestingSpecialist\Tdp\Automation\Devops\DevOps-MVP\Visor\automation_test_web_visor"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="15.0.2+7-27"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Oliver\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\app\Oliver\product\18.0.0\dbhomeXE\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.3\bin;C:\Users\Oliver\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\PuTTY\;C:\Users\Oliver\AppData\Local\Android\Sdk\emulator;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Oliver\AppData\Local\Microsoft\WindowsApps;C:\Users\Oliver\.dotnet\tools;C:\Users\Oliver\AppData\Local\gitkraken\bin;C:\Users\Oliver\AppData\Local\GitHubDesktop\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Users\Oliver\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.6.3\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="59.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Oliver"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="15"/>
+    <property name="user.name" value="Oliver"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=-t @VISO-3236"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-15.0.2"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="feature" classname="com.bdd.runnerTest.RunnerTest" time="249.897">
+    <failure message="java.lang.AssertionError: Error al intentar obtener elemento. Key: xpath - Locator: /html/body/modal-container/div/div/ng-component/div/h3" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: java.lang.AssertionError: Error al intentar obtener elemento. Key: xpath - Locator: /html/body/modal-container/div/div/ng-component/div/h3
+Caused by: java.lang.AssertionError: Error al intentar obtener elemento. Key: xpath - Locator: /html/body/modal-container/div/div/ng-component/div/h3
+</failure>
+    <system-out><![CDATA[@DiagnosticoReset
+Feature: Como usuario deseo ingresar a la pagina principal de Visor
+  Para poder ingresar mi usuario y contraseña y acceder a la pagina modo Visor
+  Cuando solicito diagnostico de reset y validar el reset
+
+  @ResetTotalNumeroActivo @VISO-3236
+  Scenario Outline: Ingreso exitoso a la pagina Visor y realizo diagnostico reset total numero activo                  # visor/diagnosticoReset.feature:7
+    Given El usuario se encuentra en la pantalla de principal de visor
+    When El usuario da click en el boton ingresar de la pantalla principal de visor
+    And Selecciona el tipo de usuario en la pantalla de login "<tipoUsuario>"
+    When Ingresa su usuario "<usuario>" y password "<password>" en la pantalla de login en el caso de prueba "<sTest>"
+    And Da click en el botón continuar
+    And Se visualiza el ingreso correcto de la pagina modo Visor
+    And Seleccionamos la opcion Telefono e ingresamos el numero "<nroTelefono>"
+    And Damos click en el boton Buscar
+    And Cerramos el pupUp
+    And Damos click en la opcion Averia
+    And Seleccionamos la opcion herramientas y seleccionar el boton General
+    And Seleccionamos la opcion Reset Total
+    When Confirmamos dando click en el boton Realizar Test
+    Then Se espera el mensaje con el test realizado
+
+    Examples: 
+[LOG] NAVEGADOR: resources
+[LOG] WORD: Evidencia renombrada - Se añadió el estado final del escenario
+[LOG] Word cerrado
+
+  @DiagnosticoReset @VISO-3236 @ResetTotalNumeroActivo
+  Scenario Outline: Ingreso exitoso a la pagina Visor y realizo diagnostico reset total numero activo                # visor/diagnosticoReset.feature:25
+    Given El usuario se encuentra en la pantalla de principal de visor                                               # LoginStepDefinition.el_usuario_se_encuentra_en_la_pantalla_de_principal_de_visor()
+    When El usuario da click en el boton ingresar de la pantalla principal de visor                                  # LoginStepDefinition.el_usuario_da_click_en_el_boton_ingresar_de_la_pantalla_principal_de_visor()
+    And Selecciona el tipo de usuario en la pantalla de login "usuario externo"                                      # LoginStepDefinition.selecciona_el_tipo_de_usuario_en_la_pantalla_de_login(String)
+    When Ingresa su usuario "rdelatorreg" y password "$t3l3f0n1c4$" en la pantalla de login en el caso de prueba "1" # LoginStepDefinition.ingresa_su_usuario_y_password_en_la_pantalla_de_login_en_el_caso_de_prueba(String,String,String)
+    And Da click en el botón continuar                                                                               # LoginStepDefinition.da_clic_en_el_botón_continuar()
+    And Se visualiza el ingreso correcto de la pagina modo Visor                                                     # HomeStepDefinition.se_visualiza_el_ingreso_correcto_de_la_pagina_modo_Visor()
+    And Seleccionamos la opcion Telefono e ingresamos el numero "920951000"                                          # HomeStepDefinition.seleccionamosLaOpcionTelefonoEIngresamosElNumero(String)
+    And Damos click en el boton Buscar                                                                               # HomeStepDefinition.damosClicEnElBotonBuscar()
+    And Cerramos el pupUp                                                                                            # ConsultaStepDefinition.cerramosElPupUp()
+    And Damos click en la opcion Averia                                                                              # ConsultaStepDefinition.damosClickEnLaOpcionAveria()
+    And Seleccionamos la opcion herramientas y seleccionar el boton General                                          # AveriasStepDefinition.seleccionamosLaOpcionHerramientasyBotonGeneral()
+    And Seleccionamos la opcion Reset Total                                                                          # AveriasStepDefinition.seleccionamosLaOpcionResetTotal()
+    When Confirmamos dando click en el boton Realizar Test                                                           # AveriasStepDefinition.confirmamosDandoClickEnElBotonRealizarTest()
+    Then Se espera el mensaje con el test realizado                                                                  # AveriasStepDefinition.seEsperaElMensajeConElTestRealizado()
+
+  @ResetTotalNumeroSuspendido @VISO-3236
+  Scenario Outline: Ingreso exitoso a la pagina Visor y realizo diagnostico reset total numero suspendido              # visor/diagnosticoReset.feature:28
+    Given El usuario se encuentra en la pantalla de principal de visor
+    When El usuario da click en el boton ingresar de la pantalla principal de visor
+    And Selecciona el tipo de usuario en la pantalla de login "<tipoUsuario>"
+    When Ingresa su usuario "<usuario>" y password "<password>" en la pantalla de login en el caso de prueba "<sTest>"
+    And Da click en el botón continuar
+    And Se visualiza el ingreso correcto de la pagina modo Visor
+    And Seleccionamos la opcion Telefono e ingresamos el numero "<nroTelefono>"
+    And Damos click en el boton Buscar
+    And Cerramos el pupUp
+    And Damos click en la opcion Averia
+    And Seleccionamos la opcion herramientas y seleccionar el boton General
+    When Seleccionamos la opcion Reset Total
+    Then Se espera el mensaje "<mensaje>" con el test realizado
+
+    Examples: 
+[LOG] NAVEGADOR: resources
+El mensaje mostrado en FE esta OK
+[LOG] WORD: Evidencia renombrada - Se añadió el estado final del escenario
+[LOG] Word cerrado
+
+  @DiagnosticoReset @ResetTotalNumeroSuspendido @VISO-3236
+  Scenario Outline: Ingreso exitoso a la pagina Visor y realizo diagnostico reset total numero suspendido            # visor/diagnosticoReset.feature:45
+    Given El usuario se encuentra en la pantalla de principal de visor                                               # LoginStepDefinition.el_usuario_se_encuentra_en_la_pantalla_de_principal_de_visor()
+    When El usuario da click en el boton ingresar de la pantalla principal de visor                                  # LoginStepDefinition.el_usuario_da_click_en_el_boton_ingresar_de_la_pantalla_principal_de_visor()
+    And Selecciona el tipo de usuario en la pantalla de login "usuario externo"                                      # LoginStepDefinition.selecciona_el_tipo_de_usuario_en_la_pantalla_de_login(String)
+    When Ingresa su usuario "rdelatorreg" y password "$t3l3f0n1c4$" en la pantalla de login en el caso de prueba "1" # LoginStepDefinition.ingresa_su_usuario_y_password_en_la_pantalla_de_login_en_el_caso_de_prueba(String,String,String)
+    And Da click en el botón continuar                                                                               # LoginStepDefinition.da_clic_en_el_botón_continuar()
+    And Se visualiza el ingreso correcto de la pagina modo Visor                                                     # HomeStepDefinition.se_visualiza_el_ingreso_correcto_de_la_pagina_modo_Visor()
+    And Seleccionamos la opcion Telefono e ingresamos el numero "920959470"                                          # HomeStepDefinition.seleccionamosLaOpcionTelefonoEIngresamosElNumero(String)
+    And Damos click en el boton Buscar                                                                               # HomeStepDefinition.damosClicEnElBotonBuscar()
+    And Cerramos el pupUp                                                                                            # ConsultaStepDefinition.cerramosElPupUp()
+    And Damos click en la opcion Averia                                                                              # ConsultaStepDefinition.damosClickEnLaOpcionAveria()
+    And Seleccionamos la opcion herramientas y seleccionar el boton General                                          # AveriasStepDefinition.seleccionamosLaOpcionHerramientasyBotonGeneral()
+    When Seleccionamos la opcion Reset Total                                                                         # AveriasStepDefinition.seleccionamosLaOpcionResetTotal()
+    Then Se espera el mensaje "Servicio cliente suspendido" con el test realizado                                    # AveriasStepDefinition.seEsperaElMensajeConElTestRealizado(String)
+
+  @ResetDatosNumeroActivo @VISO-3236
+  Scenario Outline: Ingreso exitoso a la pagina Visor y realizo diagnostico reset datos numero activo                  # visor/diagnosticoReset.feature:48
+    Given El usuario se encuentra en la pantalla de principal de visor
+    When El usuario da click en el boton ingresar de la pantalla principal de visor
+    And Selecciona el tipo de usuario en la pantalla de login "<tipoUsuario>"
+    When Ingresa su usuario "<usuario>" y password "<password>" en la pantalla de login en el caso de prueba "<sTest>"
+    And Da click en el botón continuar
+    And Se visualiza el ingreso correcto de la pagina modo Visor
+    And Seleccionamos la opcion Telefono e ingresamos el numero "<nroTelefono>"
+    And Damos click en el boton Buscar
+    And Cerramos el pupUp
+    And Damos click en la opcion Averia
+    And Seleccionamos la opcion herramientas y seleccionar el boton Datos
+    When Seleccionamos la opcion Reset de Datos
+    Then Se espera el mensaje "<mensaje>" con el test realizado
+
+    Examples: 
+[LOG] NAVEGADOR: resources
+[LOG] WORD: Evidencia renombrada - Se añadió el estado final del escenario
+[LOG] Word cerrado
+
+  @DiagnosticoReset @ResetDatosNumeroActivo @VISO-3236
+  Scenario Outline: Ingreso exitoso a la pagina Visor y realizo diagnostico reset datos numero activo                # visor/diagnosticoReset.feature:65
+    Given El usuario se encuentra en la pantalla de principal de visor                                               # LoginStepDefinition.el_usuario_se_encuentra_en_la_pantalla_de_principal_de_visor()
+    When El usuario da click en el boton ingresar de la pantalla principal de visor                                  # LoginStepDefinition.el_usuario_da_click_en_el_boton_ingresar_de_la_pantalla_principal_de_visor()
+    And Selecciona el tipo de usuario en la pantalla de login "usuario externo"                                      # LoginStepDefinition.selecciona_el_tipo_de_usuario_en_la_pantalla_de_login(String)
+    When Ingresa su usuario "rdelatorreg" y password "$t3l3f0n1c4$" en la pantalla de login en el caso de prueba "1" # LoginStepDefinition.ingresa_su_usuario_y_password_en_la_pantalla_de_login_en_el_caso_de_prueba(String,String,String)
+    And Da click en el botón continuar                                                                               # LoginStepDefinition.da_clic_en_el_botón_continuar()
+    And Se visualiza el ingreso correcto de la pagina modo Visor                                                     # HomeStepDefinition.se_visualiza_el_ingreso_correcto_de_la_pagina_modo_Visor()
+    And Seleccionamos la opcion Telefono e ingresamos el numero "920951000"                                          # HomeStepDefinition.seleccionamosLaOpcionTelefonoEIngresamosElNumero(String)
+    And Damos click en el boton Buscar                                                                               # HomeStepDefinition.damosClicEnElBotonBuscar()
+    And Cerramos el pupUp                                                                                            # ConsultaStepDefinition.cerramosElPupUp()
+    And Damos click en la opcion Averia                                                                              # ConsultaStepDefinition.damosClickEnLaOpcionAveria()
+    And Seleccionamos la opcion herramientas y seleccionar el boton Datos                                            # AveriasStepDefinition.seleccionamosLaOpcionHerramientasyBotonDatos()
+    When Seleccionamos la opcion Reset de Datos                                                                      # AveriasStepDefinition.confirmamosDandoClickEnElBotonRealizarDatos()
+    Then Se espera el mensaje "Servicio no disponible" con el test realizado                                         # AveriasStepDefinition.seEsperaElMensajeConElTestRealizado(String)
+      java.lang.AssertionError: Error al intentar obtener elemento. Key: xpath - Locator: /html/body/modal-container/div/div/ng-component/div/h3
+      	at org.testng.Assert.fail(Assert.java:94)
+      	at com.bdd.VISOR.BaseClass.getElement(BaseClass.java:139)
+      	at com.bdd.VISOR.modoVisor.page.AveriasPage.validarMensajeUsuario(AveriasPage.java:96)
+      	at com.bdd.VISOR.modoVisor.step.AveriasStep.validarMensajeUsuario(AveriasStep.java:47)
+      	at com.bdd.VISOR.modoVisor.stepdefinition.AveriasStepDefinition.seEsperaElMensajeConElTestRealizado(AveriasStepDefinition.java:46)
+      	at ?.Then Se espera el mensaje "Servicio no disponible" con el test realizado(visor/diagnosticoReset.feature:61)
+
+
+  @ResetDatosNumeroSuspendido @VISO-3236
+  Scenario Outline: Ingreso exitoso a la pagina Visor y realizo diagnostico reset datos numero suspendido              # visor/diagnosticoReset.feature:68
+    Given El usuario se encuentra en la pantalla de principal de visor
+    When El usuario da click en el boton ingresar de la pantalla principal de visor
+    And Selecciona el tipo de usuario en la pantalla de login "<tipoUsuario>"
+    When Ingresa su usuario "<usuario>" y password "<password>" en la pantalla de login en el caso de prueba "<sTest>"
+    And Da click en el botón continuar
+    And Se visualiza el ingreso correcto de la pagina modo Visor
+    And Seleccionamos la opcion Telefono e ingresamos el numero "<nroTelefono>"
+    And Damos click en el boton Buscar
+    And Cerramos el pupUp
+    And Damos click en la opcion Averia
+    And Seleccionamos la opcion herramientas y seleccionar el boton Datos
+    When Seleccionamos la opcion Reset de Datos
+    Then Se espera el mensaje "<mensaje>" con el test realizado
+
+    Examples: 
+[LOG] NAVEGADOR: resources
+El mensaje mostrado en FE esta OK
+[LOG] WORD: Evidencia renombrada - Se añadió el estado final del escenario
+[LOG] Word cerrado
+
+  @ResetDatosNumeroSuspendido @DiagnosticoReset @VISO-3236
+  Scenario Outline: Ingreso exitoso a la pagina Visor y realizo diagnostico reset datos numero suspendido            # visor/diagnosticoReset.feature:85
+    Given El usuario se encuentra en la pantalla de principal de visor                                               # LoginStepDefinition.el_usuario_se_encuentra_en_la_pantalla_de_principal_de_visor()
+    When El usuario da click en el boton ingresar de la pantalla principal de visor                                  # LoginStepDefinition.el_usuario_da_click_en_el_boton_ingresar_de_la_pantalla_principal_de_visor()
+    And Selecciona el tipo de usuario en la pantalla de login "usuario externo"                                      # LoginStepDefinition.selecciona_el_tipo_de_usuario_en_la_pantalla_de_login(String)
+    When Ingresa su usuario "rdelatorreg" y password "$t3l3f0n1c4$" en la pantalla de login en el caso de prueba "1" # LoginStepDefinition.ingresa_su_usuario_y_password_en_la_pantalla_de_login_en_el_caso_de_prueba(String,String,String)
+    And Da click en el botón continuar                                                                               # LoginStepDefinition.da_clic_en_el_botón_continuar()
+    And Se visualiza el ingreso correcto de la pagina modo Visor                                                     # HomeStepDefinition.se_visualiza_el_ingreso_correcto_de_la_pagina_modo_Visor()
+    And Seleccionamos la opcion Telefono e ingresamos el numero "920959470"                                          # HomeStepDefinition.seleccionamosLaOpcionTelefonoEIngresamosElNumero(String)
+    And Damos click en el boton Buscar                                                                               # HomeStepDefinition.damosClicEnElBotonBuscar()
+    And Cerramos el pupUp                                                                                            # ConsultaStepDefinition.cerramosElPupUp()
+    And Damos click en la opcion Averia                                                                              # ConsultaStepDefinition.damosClickEnLaOpcionAveria()
+    And Seleccionamos la opcion herramientas y seleccionar el boton Datos                                            # AveriasStepDefinition.seleccionamosLaOpcionHerramientasyBotonDatos()
+    When Seleccionamos la opcion Reset de Datos                                                                      # AveriasStepDefinition.confirmamosDandoClickEnElBotonRealizarDatos()
+    Then Se espera el mensaje "Servicio cliente suspendido" con el test realizado                                    # AveriasStepDefinition.seEsperaElMensajeConElTestRealizado(String)
+
+  @ResetVozlNumeroActivo @VISO-3236
+  Scenario Outline: Ingreso exitoso a la pagina Visor y realizo diagnostico reset voz numero activo                    # visor/diagnosticoReset.feature:88
+    Given El usuario se encuentra en la pantalla de principal de visor
+    When El usuario da click en el boton ingresar de la pantalla principal de visor
+    And Selecciona el tipo de usuario en la pantalla de login "<tipoUsuario>"
+    When Ingresa su usuario "<usuario>" y password "<password>" en la pantalla de login en el caso de prueba "<sTest>"
+    And Da click en el botón continuar
+    And Se visualiza el ingreso correcto de la pagina modo Visor
+    And Seleccionamos la opcion Telefono e ingresamos el numero "<nroTelefono>"
+    And Damos click en el boton Buscar
+    And Cerramos el pupUp
+    And Damos click en la opcion Averia
+    And Seleccionamos la opcion herramientas y seleccionar el boton Voz
+    And Seleccionamos la opcion Reset de voz
+    When Confirmamos dando click en el boton Realizar Test
+    Then Se espera el mensaje "<mensaje>" con el test realizado
+
+    Examples: 
+[LOG] NAVEGADOR: resources
+[LOG] WORD: Evidencia renombrada - Se añadió el estado final del escenario
+[LOG] Word cerrado
+
+  @DiagnosticoReset @VISO-3236 @ResetVozlNumeroActivo
+  Scenario Outline: Ingreso exitoso a la pagina Visor y realizo diagnostico reset voz numero activo                  # visor/diagnosticoReset.feature:106
+    Given El usuario se encuentra en la pantalla de principal de visor                                               # LoginStepDefinition.el_usuario_se_encuentra_en_la_pantalla_de_principal_de_visor()
+    When El usuario da click en el boton ingresar de la pantalla principal de visor                                  # LoginStepDefinition.el_usuario_da_click_en_el_boton_ingresar_de_la_pantalla_principal_de_visor()
+    And Selecciona el tipo de usuario en la pantalla de login "usuario externo"                                      # LoginStepDefinition.selecciona_el_tipo_de_usuario_en_la_pantalla_de_login(String)
+    When Ingresa su usuario "rdelatorreg" y password "$t3l3f0n1c4$" en la pantalla de login en el caso de prueba "1" # LoginStepDefinition.ingresa_su_usuario_y_password_en_la_pantalla_de_login_en_el_caso_de_prueba(String,String,String)
+    And Da click en el botón continuar                                                                               # LoginStepDefinition.da_clic_en_el_botón_continuar()
+    And Se visualiza el ingreso correcto de la pagina modo Visor                                                     # HomeStepDefinition.se_visualiza_el_ingreso_correcto_de_la_pagina_modo_Visor()
+    And Seleccionamos la opcion Telefono e ingresamos el numero "920951000"                                          # HomeStepDefinition.seleccionamosLaOpcionTelefonoEIngresamosElNumero(String)
+    And Damos click en el boton Buscar                                                                               # HomeStepDefinition.damosClicEnElBotonBuscar()
+    And Cerramos el pupUp                                                                                            # ConsultaStepDefinition.cerramosElPupUp()
+    And Damos click en la opcion Averia                                                                              # ConsultaStepDefinition.damosClickEnLaOpcionAveria()
+    And Seleccionamos la opcion herramientas y seleccionar el boton Voz                                              # AveriasStepDefinition.seleccionamosLaOpcionHerramientasYSeleccionarElBotonVoz()
+    And Seleccionamos la opcion Reset de voz                                                                         # AveriasStepDefinition.seleccionamosLaOpcionResetDeVoz()
+    When Confirmamos dando click en el boton Realizar Test                                                           # AveriasStepDefinition.confirmamosDandoClickEnElBotonRealizarTest()
+    Then Se espera el mensaje "Servicio no disponible" con el test realizado                                         # AveriasStepDefinition.seEsperaElMensajeConElTestRealizado(String)
+      java.lang.AssertionError: Error al intentar obtener elemento. Key: xpath - Locator: /html/body/modal-container/div/div/ng-component/div/h3
+      	at org.testng.Assert.fail(Assert.java:94)
+      	at com.bdd.VISOR.BaseClass.getElement(BaseClass.java:139)
+      	at com.bdd.VISOR.modoVisor.page.AveriasPage.validarMensajeUsuario(AveriasPage.java:96)
+      	at com.bdd.VISOR.modoVisor.step.AveriasStep.validarMensajeUsuario(AveriasStep.java:47)
+      	at com.bdd.VISOR.modoVisor.stepdefinition.AveriasStepDefinition.seEsperaElMensajeConElTestRealizado(AveriasStepDefinition.java:46)
+      	at ?.Then Se espera el mensaje "Servicio no disponible" con el test realizado(visor/diagnosticoReset.feature:102)
+
+
+  @ResetVozNumeroSuspendido @VISO-3236
+  Scenario Outline: Ingreso exitoso a la pagina Visor y realizo diagnostico reset voz numero suspendido                # visor/diagnosticoReset.feature:109
+    Given El usuario se encuentra en la pantalla de principal de visor
+    When El usuario da click en el boton ingresar de la pantalla principal de visor
+    And Selecciona el tipo de usuario en la pantalla de login "<tipoUsuario>"
+    When Ingresa su usuario "<usuario>" y password "<password>" en la pantalla de login en el caso de prueba "<sTest>"
+    And Da click en el botón continuar
+    And Se visualiza el ingreso correcto de la pagina modo Visor
+    And Seleccionamos la opcion Telefono e ingresamos el numero "<nroTelefono>"
+    And Damos click en el boton Buscar
+    And Cerramos el pupUp
+    And Damos click en la opcion Averia
+    And Seleccionamos la opcion herramientas y seleccionar el boton Voz
+    When Seleccionamos la opcion Reset de voz
+    Then Se espera el mensaje "<mensaje>" con el test realizado
+
+    Examples: 
+[LOG] NAVEGADOR: resources
+El mensaje mostrado en FE esta OK
+[LOG] WORD: Evidencia renombrada - Se añadió el estado final del escenario
+[LOG] Word cerrado
+
+  @DiagnosticoReset @ResetVozNumeroSuspendido @VISO-3236
+  Scenario Outline: Ingreso exitoso a la pagina Visor y realizo diagnostico reset voz numero suspendido              # visor/diagnosticoReset.feature:126
+    Given El usuario se encuentra en la pantalla de principal de visor                                               # LoginStepDefinition.el_usuario_se_encuentra_en_la_pantalla_de_principal_de_visor()
+    When El usuario da click en el boton ingresar de la pantalla principal de visor                                  # LoginStepDefinition.el_usuario_da_click_en_el_boton_ingresar_de_la_pantalla_principal_de_visor()
+    And Selecciona el tipo de usuario en la pantalla de login "usuario externo"                                      # LoginStepDefinition.selecciona_el_tipo_de_usuario_en_la_pantalla_de_login(String)
+    When Ingresa su usuario "rdelatorreg" y password "$t3l3f0n1c4$" en la pantalla de login en el caso de prueba "1" # LoginStepDefinition.ingresa_su_usuario_y_password_en_la_pantalla_de_login_en_el_caso_de_prueba(String,String,String)
+    And Da click en el botón continuar                                                                               # LoginStepDefinition.da_clic_en_el_botón_continuar()
+    And Se visualiza el ingreso correcto de la pagina modo Visor                                                     # HomeStepDefinition.se_visualiza_el_ingreso_correcto_de_la_pagina_modo_Visor()
+    And Seleccionamos la opcion Telefono e ingresamos el numero "920959470"                                          # HomeStepDefinition.seleccionamosLaOpcionTelefonoEIngresamosElNumero(String)
+    And Damos click en el boton Buscar                                                                               # HomeStepDefinition.damosClicEnElBotonBuscar()
+    And Cerramos el pupUp                                                                                            # ConsultaStepDefinition.cerramosElPupUp()
+    And Damos click en la opcion Averia                                                                              # ConsultaStepDefinition.damosClickEnLaOpcionAveria()
+    And Seleccionamos la opcion herramientas y seleccionar el boton Voz                                              # AveriasStepDefinition.seleccionamosLaOpcionHerramientasYSeleccionarElBotonVoz()
+    When Seleccionamos la opcion Reset de voz                                                                        # AveriasStepDefinition.seleccionamosLaOpcionResetDeVoz()
+    Then Se espera el mensaje "Servicio cliente suspendido" con el test realizado                                    # AveriasStepDefinition.seEsperaElMensajeConElTestRealizado(String)
+]]></system-out>
+    <system-err><![CDATA[ChromeDriver was started successfully.
+jul. 04, 2021 6:10:46 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+ChromeDriver was started successfully.
+Jul 04, 2021 6:11:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+ChromeDriver was started successfully.
+Jul 04, 2021 6:12:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+ChromeDriver was started successfully.
+Jul 04, 2021 6:12:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+ChromeDriver was started successfully.
+Jul 04, 2021 6:13:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+ChromeDriver was started successfully.
+Jul 04, 2021 6:14:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,16 @@
+com\bdd\VISOR\utility\ExtentReportUtil.class
+com\bdd\VISOR\utility\scroll.class
+com\bdd\VISOR\exceptions\FrontEndException.class
+com\bdd\VISOR\utility\CSVRead$1.class
+com\bdd\VISOR\api\StepsApiGmail.class
+com\bdd\VISOR\utility\CallerSOAP.class
+com\bdd\VISOR\utility\ExcelReader.class
+com\bdd\VISOR\BaseClass.class
+com\bdd\VISOR\utility\Sleeper.class
+com\bdd\VISOR\api\GmailAPI.class
+com\bdd\VISOR\utility\FileHelper.class
+com\bdd\VISOR\utility\StringHelper.class
+com\bdd\VISOR\utility\CSVRead.class
+com\bdd\VISOR\utility\GenerateWord.class
+com\bdd\VISOR\Hook.class
+com\bdd\VISOR\utility\Listener.class

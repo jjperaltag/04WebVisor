@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression]" guice-stage="DEVELOPMENT" verbose="0">
+  <test name="GroupTest(failed)">
+    <classes>
+      <class name="com.bdd.runnerTest.RunnerTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.bdd.runnerTest.RunnerTest -->
+    </classes>
+  </test> <!-- GroupTest(failed) -->
+</suite> <!-- Failed suite [Regression] -->
