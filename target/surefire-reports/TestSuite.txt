@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 250.405 sec <<< FAILURE! - in TestSuite
-feature(com.bdd.runnerTest.RunnerTest)  Time elapsed: 249.897 sec  <<< FAILURE!
-cucumber.runtime.CucumberException: java.lang.AssertionError: Error al intentar obtener elemento. Key: xpath - Locator: /html/body/modal-container/div/div/ng-component/div/h3
-Caused by: java.lang.AssertionError: Error al intentar obtener elemento. Key: xpath - Locator: /html/body/modal-container/div/div/ng-component/div/h3
-
