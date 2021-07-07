@@ -33,9 +33,9 @@ public class LoginStepDefinition {
 
     /*------------------------------------------------------------------------------------------------------*/
     @When("^Ingresa su usuario \"([^\"]*)\" y password \"([^\"]*)\" en la pantalla de login en el caso de prueba \"([^\"]*)\"$")
-    public void ingresa_su_usuario_y_password_en_la_pantalla_de_login_en_el_caso_de_prueba(String sTest,String usuario, String password) throws Throwable {
-        loginStep.ingresarUsuario(sTest);
-        loginStep.ingresarPassword(sTest);
+    public void ingresa_su_usuario_y_password_en_la_pantalla_de_login_en_el_caso_de_prueba(String usuario,String password, String sTest) throws Throwable {
+        loginStep.ingresarUsuario(usuario);
+        loginStep.ingresarPassword(password);
     }
 
     /*------------------------------------------------------------------------------------------------------*/

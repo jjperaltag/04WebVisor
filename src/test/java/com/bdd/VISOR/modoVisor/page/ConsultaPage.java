@@ -36,15 +36,14 @@ public class ConsultaPage {
     }
 
     public void clickBotonCerrar() throws Exception {
-        wait.until(ExpectedConditions.visibilityOf(getElement(driver,"id", ConsultaPath.BTN_CERRAR)));
         Thread.sleep(6000);
+        wait.until(ExpectedConditions.visibilityOf(getElement(driver,"id", ConsultaPath.BTN_CERRAR)));
         getElement(driver,"id", ConsultaPath.BTN_CERRAR).click();
 
 //        WebElement root1 = getElement(driver,"tagname",BTN_SALIR_ROOT);
 //        WebElement shadowRoot1 = expandRootElement(root1);
 //        wait.until(ExpectedConditions.elementToBeClickable(getElement(driver,"id",BTN_CERRAR)));
 //        shadowRoot1.findElement(By.id("close-modal-message")).click();
-
 
         ExtentReportUtil.INSTANCE.stepPass(driver, "Click en el botón Cerrar.");
         generateWord.sendText("Click en el botón Cerrar.");

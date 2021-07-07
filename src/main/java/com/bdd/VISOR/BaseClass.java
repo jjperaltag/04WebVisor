@@ -597,4 +597,22 @@ public class BaseClass {
 //    public static Logger logger(@NotNull Class clase) {
 //        return Logger.getLogger(clase.getName());
 //    }
+
+
+    private static String shadowRootQuerySelector(String elementBase, String pathCss) {
+        return "return document.querySelector(" + "\"" + elementBase + "\").shadowRoot.querySelector(\"" + pathCss + "\")";
+    }
+
+    public static WebElement getElementoFromJavaScript(WebDriver driver, String appBase, String pathCss) {
+        JavascriptExecutor ex = (JavascriptExecutor)driver;
+        String query = shadowRootQuerySelector(appBase, pathCss);
+        WebElement element = (WebElement)ex.executeScript(query, new Object[0]);
+        if (element == null) {
+            System.out.println("No se ubico elemento.");
+
+        } else {
+            System.out.println("Se ubico elemento.");
+        }
+        return element;
+    }
 }

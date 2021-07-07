@@ -1,4 +1,4 @@
-@DiagnosticoReset
+@VISORPILOTO
 Feature: Como usuario deseo ingresar a la pagina principal de Visor
   Para poder ingresar mi usuario y contraseña y acceder a la pagina modo Visor
   Cuando solicito diagnostico de reset y validar el reset
@@ -21,7 +21,7 @@ Feature: Como usuario deseo ingresar a la pagina principal de Visor
     Then Se espera el mensaje con el test realizado
 
     Examples:
-      | sTest | tipoUsuario     | usuario     | password     | nroTelefono |
+      | sTest | tipoUsuario     | usuario     | password       | nroTelefono |
       | 1     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920951000   |
 
   @ResetTotalNumeroSuspendido @VISO-3236

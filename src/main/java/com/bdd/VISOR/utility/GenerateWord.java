@@ -147,6 +147,7 @@ public class GenerateWord {
         run.addTab();
         run.setFontFamily("Century Gothic");
         run.setFontSize(9);
+        run.addCarriageReturn();
     }
 
     public void endToWord(String status) throws IOException   {

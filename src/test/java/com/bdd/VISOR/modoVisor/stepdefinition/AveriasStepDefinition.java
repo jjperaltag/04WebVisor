@@ -61,4 +61,51 @@ public class AveriasStepDefinition {
     public void seleccionamosLaOpcionResetDeVoz() {
         averiasStep.clickBotonResetDeVoz();
     }
+
+    ////Gleidy
+
+    @When("Seleccionamos la opcion Problemas con datos")
+    public void seleccionamosOpcionProblemasDatos() throws Exception {
+        averiasStep.clickBotonProblemasDatos();
+    }
+
+    @And("Cierra popUp de ultimos diagnosticos")
+    public void cierraPopupUltimosDiagnosticos() throws Exception {
+        averiasStep.clickCerrarPopupUltimosDiagnosticos();
+    }
+
+    @And("Se guarda la información del contacto")
+    public void guardarInfoContacto() throws Exception {
+        averiasStep.clickGuardarInfoContacto();
+    }
+
+    @And("Cierra la sesion")
+    public void cerrarSesion() throws Exception {
+        averiasStep.clickCerrarSesion();
+    }
+
+    @When("Seleccionamos la opcion Problemas con voz")
+    public void seleccionamosOpcionProblemasVoz() throws Exception {
+        averiasStep.clickBotonProblemasVoz();
+    }
+
+    @Then("Valida acciones en ultimo diagnostico \"([^\"]*)\"$")
+    public void validaAccionesUltimoDiagnostico(String perfil) throws Exception {
+        averiasStep.validaAccionesUltimoDiagnostico(perfil);
+    }
+
+    @Then("Valida que no este presente le boton SMS")
+    public void validaNoestePresenteBtnSMS() throws Exception {
+        averiasStep.validaNoestePresenteBtnSMS();
+    }
+
+    @Then("Validar cambios Step 3 en el \"([^\"]*)\" diagnosticos problemas de datos con el \"([^\"]*)\"$")
+    public void validaCambiosStep3DiagnosticosProblemasDatos(String escenario, String perfil) throws Exception {
+        averiasStep.validaCambiosStep3DiagnosticosProblemasDatos(escenario,perfil);
+    }
+
+    @Then("Validar cambios Step 3 en el \"([^\"]*)\" diagnosticos problemas de voz con el \"([^\"]*)\"$")
+    public void validaCambiosStep3DiagnosticosProblemasVoz(String escenario, String perfil) throws Exception {
+        averiasStep.validaCambiosStep3DiagnosticosProblemasVoz(escenario,perfil);
+    }
 }

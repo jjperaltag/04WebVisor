@@ -50,4 +50,41 @@ public class AveriasStep {
             System.out.println("El mensaje esperado es: "+mensaje);
         }
     }
+
+///Gleidy
+    public void clickBotonProblemasDatos() throws Exception {
+        averiasPage.clickBotonProblemasDatos();
+    }
+
+    public void clickCerrarPopupUltimosDiagnosticos() throws Exception {
+        averiasPage.clickCerrarPopupUltimosDiagnosticos();
+    }
+
+    public void clickGuardarInfoContacto() throws Exception {
+        averiasPage.clickGuardarInfoContacto();
+    }
+
+    public void clickCerrarSesion() throws Exception {
+        averiasPage.clickCerrarSesion();
+    }
+
+    public void clickBotonProblemasVoz() throws Exception {
+        averiasPage.clickBotonProblemasVoz();
+    }
+
+    public void validaAccionesUltimoDiagnostico(String perfil) throws Exception {
+        averiasPage.validaAccionesUltimoDiagnostico(perfil);
+    }
+
+    public void validaNoestePresenteBtnSMS() throws Exception {
+        averiasPage.validaNoestePresenteBtnSMS();
+    }
+
+    public void validaCambiosStep3DiagnosticosProblemasDatos(String escenario, String perfil) throws Exception {
+        averiasPage.validaCambiosStep3DiagnosticosProblemasDatos(escenario,perfil);
+    }
+    public void validaCambiosStep3DiagnosticosProblemasVoz(String escenario, String perfil) throws Exception {
+        averiasPage.validaCambiosStep3DiagnosticosProblemasVoz(escenario,perfil);
+    }
+
 }
