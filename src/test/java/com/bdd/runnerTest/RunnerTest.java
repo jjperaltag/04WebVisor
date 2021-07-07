@@ -9,8 +9,8 @@ import org.testng.annotations.Test;
         glue = {"com.bdd.VISOR",
                 "com.bdd.web.VISOR.modoVisor.stepdefinition"},
         plugin = {"pretty", "html:target/cucumber"},
-        tags = {"@DiagnosticoReset"},
-//        tags = {"@ResetTotalNumeroActivo"},
+//        tags = {"@Login"},
+        tags = {"@ResetTotalNumeroActivo"},
 
         monochrome = true
 )

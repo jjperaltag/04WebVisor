@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Regression">
-	<!--	<listeners>-->
-	<!--		<listener class-name="com.tsoft.bot.frontend.listener.Listener"></listener>-->
-	<!--	</listeners>-->
+<!--	<listeners>-->
+<!--		<listener class-name="com.tsoft.bot.frontend.listener.Listener"></listener>-->
+<!--	</listeners>-->
 	<test name="GroupTest">
 		<classes>
-			<class name="com.bdd.runnerTest.RunnerTest"/>
+			<class name="com.tsoft.bot.frontend.runner.RunTest"/>
 		</classes>
 	</test>
 </suite>

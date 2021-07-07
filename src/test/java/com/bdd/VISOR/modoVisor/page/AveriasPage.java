@@ -12,7 +12,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import static com.bdd.VISOR.BaseClass.*;
+import static com.bdd.VISOR.BaseClass.existElementWaitVisible;
+import static com.bdd.VISOR.BaseClass.getElement;
 import static com.bdd.VISOR.modoVisor.path.AveriasPath.*;
 
 public class AveriasPage {
@@ -92,7 +93,6 @@ public class AveriasPage {
     }
 
     public boolean validarMensajeUsuario(String mensaje){
-        sleep(8000);
         wait.until(ExpectedConditions.visibilityOf(getElement(driver,"xpath",LBL_MENSAJE_USUARIO)));
         String mensajeUI = getElement(driver,"xpath",LBL_MENSAJE_USUARIO).getText();
         if (mensaje.equals(mensajeUI)){
