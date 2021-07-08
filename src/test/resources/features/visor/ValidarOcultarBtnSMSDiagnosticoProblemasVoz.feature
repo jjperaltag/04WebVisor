@@ -1,4 +1,4 @@
-@VISORPILOTO
+@VISOR_PILOTO
 Feature: Validar que se oculte el botón de SMS en los diagnósticos de problemas con voz
 
   @VISO-3229

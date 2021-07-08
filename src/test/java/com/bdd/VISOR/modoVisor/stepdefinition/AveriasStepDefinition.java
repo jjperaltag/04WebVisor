@@ -1,7 +1,6 @@
 package com.bdd.VISOR.modoVisor.stepdefinition;
 
 import com.bdd.VISOR.modoVisor.step.AveriasStep;
-import com.bdd.VISOR.modoVisor.step.ConsultaStep;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -102,6 +101,16 @@ public class AveriasStepDefinition {
     @Then("Validar cambios Step 3 en el \"([^\"]*)\" diagnosticos problemas de datos con el \"([^\"]*)\"$")
     public void validaCambiosStep3DiagnosticosProblemasDatos(String escenario, String perfil) throws Exception {
         averiasStep.validaCambiosStep3DiagnosticosProblemasDatos(escenario,perfil);
+    }
+
+    @And("Damos click al boton del \"([^\"]*)\" de voz a ejecutar")
+    public void seleccionaFlujoVozaEjecutar(String flujo) throws Exception {
+        averiasStep.seleccionaFlujoVozaEjecutar(flujo);
+    }
+
+    @And("Damos click al boton del flujo de datos a ejecutar")
+    public void seleccionaFlujoDatosaEjecutar() throws Exception {
+        averiasStep.seleccionaFlujoDatosaEjecutar();
     }
 
     @Then("Validar cambios Step 3 en el \"([^\"]*)\" diagnosticos problemas de voz con el \"([^\"]*)\"$")

@@ -1,7 +1,6 @@
 package com.bdd.VISOR.modoVisor.step;
 
 import com.bdd.VISOR.modoVisor.page.AveriasPage;
-import org.testng.Assert;
 
 public class AveriasStep {
 
@@ -85,6 +84,14 @@ public class AveriasStep {
     }
     public void validaCambiosStep3DiagnosticosProblemasVoz(String escenario, String perfil) throws Exception {
         averiasPage.validaCambiosStep3DiagnosticosProblemasVoz(escenario,perfil);
+    }
+
+    public void seleccionaFlujoDatosaEjecutar() throws Exception {
+        averiasPage.seleccionaFlujoDatosaEjecutar();
+    }
+
+    public void seleccionaFlujoVozaEjecutar(String flujo) throws Exception {
+        averiasPage.seleccionaFlujoVozaEjecutar(flujo);
     }
 
 }

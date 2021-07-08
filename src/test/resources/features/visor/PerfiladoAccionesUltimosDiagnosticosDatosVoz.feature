@@ -1,4 +1,4 @@
-@PerfiladoAccionesUltimoDiagnosticoDatosVoz
+@VISOR_PILOTO
 Feature: Validar que un número activo pueda realizar visualizar los últimos diagnósticos de datos
 
   @VISO-3232 @PerfiladoAccionesUltimoDiagnosticoDatos
@@ -26,7 +26,7 @@ Feature: Validar que un número activo pueda realizar visualizar los últimos di
       | 4     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920959154   | 1ra Linea|
       | 5     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920951728   | 1ra Linea|
       | 6     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 650006465   | 1ra Linea|
-      | 7     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920959152   | 1ra Linea|
+      | 7     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920951000   | 1ra Linea|
 
   @VISO-3232 @PerfiladoAccionesUltimoDiagnosticoVoz
   Scenario Outline: Ingreso exitoso a la pagina Visor y valida el perfilado de acciones en ultimos diagnósticos para problemas con voz
@@ -53,4 +53,4 @@ Feature: Validar que un número activo pueda realizar visualizar los últimos di
       | 4     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920959154   | 1ra Linea|
       | 5     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920951728   | 1ra Linea|
       | 6     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 650006465   | 1ra Linea|
-      | 7     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920959152   | 1ra Linea|
+      | 7     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920951000   | 1ra Linea|

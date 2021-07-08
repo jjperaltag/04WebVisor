@@ -148,6 +148,9 @@ public class AveriasPage {
         ExtentReportUtil.INSTANCE.stepPass(driver, "Click botón Cerrar Sesión");
         generateWord.sendText("Click botón Cerrar Sesión");
         generateWord.addImageToWord(driver);
+        sleep(2000);
+        generateWord.sendText("Sesión Finalizada");
+        generateWord.addImageToWord(driver);
     }
 
     public void clickBotonProblemasVoz() throws Exception {
@@ -161,6 +164,8 @@ public class AveriasPage {
         String escenario="";
         String accion="";
         int r=1;
+        ExtentReportUtil.INSTANCE.stepPass(driver, "Validar Acciones en últimos diagnósticos");
+        generateWord.addImageToWord(driver);
         WebElement table = driver.findElement(By.xpath(INFO_ULTIMOS_DIAGNOSTICOS));
         // Obtener todas las filas de la tabla
         List<WebElement> allRows = table.findElements(By.tagName("tdp-st-table-body-row"));
@@ -172,354 +177,387 @@ public class AveriasPage {
             validarAccionesXEscenariosUltimoDiagnostico(escenario,accion,perfil);
             r++;
         }
-        ExtentReportUtil.INSTANCE.stepPass(driver, "Validar Acciones en últimos diagnósticos");
         generateWord.sendText("La acciones presentadas son correctas" );
-        generateWord.addImageToWord(driver);
     }
 
     public void validarAccionesXEscenariosUltimoDiagnostico(String escenario, String accion, String perfil) throws Exception {
         switch (escenario){
             case "FCR no recuperó info de cliente":
                 if (!accion.equals("Ir al árbol")){
-                 generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                 generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                  driver.close();
                 }
                 break;
             case "Línea suspendida":
                 if (!accion.equals("")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Corte APC":
                 if (!accion.equals("")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Corte por Robo":
                 if (!accion.equals("")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Cliente con deuda":
                 if (!accion.equals("")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Cliente lista negra":
                 if (!accion.equals("")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Reconexión fallida":
                 if (!accion.equals("Ir al árbol")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Reconexión exitosa":
                 if (!accion.equals("")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Reconexión en proceso":
                 if (!accion.equals("")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Problema en HLR/PCRF":
                 if (!accion.equals("Ir al árbol")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Reset datos pendiente":
                 if (!accion.equals("Ir al árbol")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Reset datos fallido":
                 if (!accion.equals("Ir al árbol")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Problemas con bonos":
                 if (!accion.equals("Validar")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Problemas Saldo y/o Recargas":
                 if (!accion.equals("Validar")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Cliente sin saldo":
                 if (!accion.equals("")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Error de recargas":
                 if (!accion.equals("Validar")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Problemas con APN":
                 if (!accion.equals("Ir al árbol")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "APN regularizado":
                 if (!accion.equals("Verificar")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Problema con modo red":
                 if (!accion.equals("Ir al árbol")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Problemas con IMSI":
                 if (!accion.equals("Ir al árbol")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "IMSI regularizado":
                 if (!accion.equals("Verificar")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Reset total fallido":
                if (perfil.equals("1ra Linea")) {
                    if (!accion.equals("Transferir")) {
-                       generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + "es incorrecto");
+                       generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + " es incorrecto");
                        driver.close();
                    }
                }
                else {
                    //2da Línea
                    if (!accion.equals("Realizar reset")) {
-                       generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + "es incorrecto");
+                       generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + " es incorrecto");
                        driver.close();
                    }
                }
                 break;
             case "Reset total exitoso":
                 if (!accion.equals("Verificar")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Problema componentes datos":
                 if (!accion.equals("Ir al árbol")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Cliente sin datos":
                 if (perfil.equals("1ra Linea")) {
                     if (!accion.equals("Transferir")) {
-                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + "es incorrecto");
+                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + " es incorrecto");
                         driver.close();
                     }
                 }
                 else {
                     //2da Línea
                     if (!accion.equals("Genera doit")) {
-                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + "es incorrecto");
+                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + " es incorrecto");
                         driver.close();
                     }
                 }
                 break;
             case "Caso registrado":
                 if (!accion.equals("")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Componentes voz inactivos":
                 if (perfil.equals("1ra Linea")) {
                     if (!accion.equals("Transferir")) {
-                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + "es incorrecto");
+                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + " es incorrecto");
                         driver.close();
                     }
                 }
                 else {
                     //2da Línea
                     if (!accion.equals("Genera doit")) {
-                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + "es incorrecto");
+                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + " es incorrecto");
                         driver.close();
                     }
                 }
                 break;
             case "Serv. Camel activado":
                 if (!accion.equals("Verificar")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Serv. Camel inactivo":
                 if (perfil.equals("1ra Linea")) {
                     if (!accion.equals("Transferir")) {
-                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + "es incorrecto");
+                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + " es incorrecto");
                         driver.close();
                     }
                 }
                 else {
                     //2da Línea
                     if (!accion.equals("Genera doit")) {
-                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + "es incorrecto");
+                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + " es incorrecto");
                         driver.close();
                     }
                 }
                 break;
             case "Corrección exitosa":
                 if (!accion.equals("Verificar")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Corrección fallida":
                 if (perfil.equals("1ra Linea")) {
                     if (!accion.equals("Transferir")) {
-                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + "es incorrecto");
+                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + " es incorrecto");
                         driver.close();
                     }
                 }
                 else {
                     //2da Línea
                     if (!accion.equals("Realizar reset total")) {
-                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + "es incorrecto");
+                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + " es incorrecto");
                         driver.close();
                     }
                 }
                 break;
             case "Desactivación exitosa":
                 if (!accion.equals("Verificar")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             case "Desactivación fallida":
                 if (perfil.equals("1ra Linea")) {
                     if (!accion.equals("Transferir")) {
-                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + "es incorrecto");
+                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + " es incorrecto");
                         driver.close();
                     }
                 }
                 else {
                     //2da Línea
                     if (!accion.equals("Realizar reset total")) {
-                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + "es incorrecto");
+                        generateWord.sendText("La acción " + accion + "presentada para el escenario: " + escenario + " es incorrecto");
                         driver.close();
                     }
                 }
                 break;
             case "No Disponible":
                 if (!accion.equals("")){
-                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "es incorrecto" );
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
                 }
                 break;
             default:
-                generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + "no se ubicó en las opciones definidas" );
-                System.out.println("Se fue por default >>>>  " +escenario);
+                //generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " no se ubicó en las opciones definidas" );
+                System.out.println("Escenario que no pertenece a los mapeados para Escenario Móvil >>>>  " +escenario);
                 break;
         }
 
     }
 
     public void validaNoestePresenteBtnSMS() throws Exception {
-        WebElement element = getElementoFromJavaScript(driver,ROOT_BTN_SMS, BTN_SMS);
         ExtentReportUtil.INSTANCE.stepPass(driver, "Validar que no se presente el botón SMS en la pantalla de diagnóstico de problemas de Voz");
-
-        if(element.isDisplayed()){
-            generateWord.sendText("Se visualiza el botón de SMS en la pantalla de Diagnóstico de problemas de voz");
-            generateWord.addImageToWord(driver);
-            driver.close();
-        }
-        else{
+        boolean btn_SMS = driver.findElements( By.cssSelector(ROOT_BTN_SMS)).size() != 0;
+        if (Objects.equals(btn_SMS,false)) {
             generateWord.sendText("No se visualiza el botón de SMS en la pantalla de Diagnóstico de problemas de voz");
             generateWord.addImageToWord(driver);
             clickCerrarSesion();
         }
+        else {
+            generateWord.sendText("Se visualiza el botón de SMS en la pantalla de Diagnóstico de problemas de voz");
+            generateWord.addImageToWord(driver);
+            driver.close();
+        }
     }
-    public void validaCambiosStep3DiagnosticosProblemasDatos(String escenario, String perfil) throws Exception {
+
+    public void seleccionaFlujoDatosaEjecutar() throws Exception {
         sleep(1000);
-        getElement(driver,"xpath", BTN_NO_NAVEGA).click();
+        WebElement element = getElementoFromJavaScript(driver,BTN_NO_NAVEGA_ROOT, BTN_NO_NAVEGA);
+        element.click();
         generateWord.sendText("Click botón No Navega");
-        generateWord.addImageToWord(driver);
-        sleep(1000);
-        WebElement element = getElementoFromJavaScript(driver,BTN_NO_STEP_2_MASIVAS_ROOT, BTN_NO_STEP_2_MASIVAS);
-        element.click();
-        generateWord.sendText("Click botón No en ¿Hay incidencias masivas?");
-        generateWord.addImageToWord(driver);
-        element = getElementoFromJavaScript(driver,BTN_NO_STEP_2_PREVIO_ROOT, BTN_NO_STEP_2_PREVIO);
-        element.click();
-        generateWord.sendText("Click botón No en ¿Tiene casos previos registrados?");
-        generateWord.addImageToWord(driver);
-        element = getElementoFromJavaScript(driver,BTN_NO_STEP_2_ESCENARIO_ROOT, BTN_NO_STEP_2_ESCENARIO);
-        element.click();
-        generateWord.sendText("Click botón No en ¿El cliente tiene alguno de los escenarios?");
-        generateWord.addImageToWord(driver);
-        wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(TIMER_CONSULTA_STEP_2))));
-
-        ///Obtener valor del texto del botón de accion del escenario
-        sleep(2000);
-        String accion= driver.findElement(By.xpath(BTN_CAMBIO_STEP3)).getText();
-
-        ///Validar los botones de acción según escenario y perfil
-        validarBtnCambiosStep3DiagnosticosProblemasDatosVoz(escenario,accion,perfil);
-        ///
-        ExtentReportUtil.INSTANCE.stepPass(driver, "Validar cambios en el botón de acción del Step 3 diagnósticos de problemas con Datos");
-        generateWord.sendText("El botón de acción presentado para el escenario:  "+ escenario +" es correcto" );
-        generateWord.addImageToWord(driver);
-    }
-
-    public void validaCambiosStep3DiagnosticosProblemasVoz(String escenario, String perfil) throws Exception {
-        sleep(1000);
-        WebElement element = getElementoFromJavaScript(driver,BTN_NO_RECIBE_NI_LLAMA_ROOT, BTN_NO_RECIBE_NI_LLAMA);
-        element.click();
-        generateWord.sendText("Click botón Ni recibe ni llama");
         generateWord.addImageToWord(driver);
         sleep(1000);
         element = getElementoFromJavaScript(driver,BTN_NO_STEP_2_MASIVAS_ROOT, BTN_NO_STEP_2_MASIVAS);
         element.click();
         generateWord.sendText("Click botón No en ¿Hay incidencias masivas?");
         generateWord.addImageToWord(driver);
+        sleep(1000);
         element = getElementoFromJavaScript(driver,BTN_NO_STEP_2_PREVIO_ROOT, BTN_NO_STEP_2_PREVIO);
         element.click();
         generateWord.sendText("Click botón No en ¿Tiene casos previos registrados?");
         generateWord.addImageToWord(driver);
+        sleep(1000);
         element = getElementoFromJavaScript(driver,BTN_NO_STEP_2_ESCENARIO_ROOT, BTN_NO_STEP_2_ESCENARIO);
         element.click();
         generateWord.sendText("Click botón No en ¿El cliente tiene alguno de los escenarios?");
         generateWord.addImageToWord(driver);
         wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(TIMER_CONSULTA_STEP_2))));
+        sleep(1000);
+        element = getElementoFromJavaScript(driver,BTN_STEP_2_SIGUIENTE_NO_NAVEGA_ROOT, BTN_STEP_2_SIGUIENTE_NO_NAVEGA);
+        element.click();
+        generateWord.sendText("Click botón Siguiente Step 2");
+        generateWord.addImageToWord(driver);
+    }
 
-        ///Obtener valor del texto del botón de accion del escenario
+    public void validaCambiosStep3DiagnosticosProblemasDatos(String escenario, String perfil) throws Exception {
+       ///Obtener valor del texto del botón de accion del escenario
         sleep(2000);
-        String accion= driver.findElement(By.xpath(BTN_CAMBIO_STEP3)).getText();
+        WebElement element = getElementoFromJavaScript(driver,BTN_STEP_3_CONTINUAR_ROOT, BTN_STEP_3_CONTINUAR);
+        String accion= element.getText();
 
         ///Validar los botones de acción según escenario y perfil
         validarBtnCambiosStep3DiagnosticosProblemasDatosVoz(escenario,accion,perfil);
-        ///
+
+        ExtentReportUtil.INSTANCE.stepPass(driver, "Validar cambios en el botón de acción del Step 3 diagnósticos de problemas con Datos");
+        generateWord.sendText("El botón de acción presentado para el escenario:  "+ escenario +" es correcto" );
+        generateWord.addImageToWord(driver);
+    }
+
+    public void seleccionaFlujoVozaEjecutar(String flujo) throws Exception {
+        sleep(1000);
+        WebElement element;
+        if (flujo.equals("Ni recibe ni llama")){
+        element = getElementoFromJavaScript(driver,BTN_NO_RECIBE_NI_LLAMA_ROOT, BTN_NO_RECIBE_NI_LLAMA);
+        element.click();
+        generateWord.sendText("Click botón Ni recibe ni llama");
+        generateWord.addImageToWord(driver);}
+        else {
+          element = getElementoFromJavaScript(driver,BTN_LARGA_DISTANCIA_ROOT, BTN_LARGA_DISTANCIA);
+          element.click();
+          generateWord.sendText("Click botón Larga Distancia");
+          generateWord.addImageToWord(driver);
+        }
+        sleep(1000);
+        element = getElementoFromJavaScript(driver,BTN_NO_STEP_2_MASIVAS_ROOT, BTN_NO_STEP_2_MASIVAS);
+        element.click();
+        generateWord.sendText("Click botón No en ¿Hay incidencias masivas?");
+        generateWord.addImageToWord(driver);
+        sleep(1000);
+        element = getElementoFromJavaScript(driver,BTN_NO_STEP_2_PREVIO_ROOT, BTN_NO_STEP_2_PREVIO);
+        element.click();
+        generateWord.sendText("Click botón No en ¿Tiene casos previos registrados?");
+        generateWord.addImageToWord(driver);
+        sleep(1000);
+        element = getElementoFromJavaScript(driver,BTN_NO_STEP_2_ESCENARIO_ROOT, BTN_NO_STEP_2_ESCENARIO);
+        element.click();
+        generateWord.sendText("Click botón No en ¿El cliente tiene alguno de los escenarios?");
+        generateWord.addImageToWord(driver);
+        wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(TIMER_CONSULTA_STEP_2))));
+        sleep(1000);
+        if (flujo.equals("Ni recibe ni llama")) {
+            element = getElementoFromJavaScript(driver, BTN_STEP_2_SIGUIENTE_NI_RECIBE_NI_LLAMA_ROOT, BTN_STEP_2_SIGUIENTE_NI_RECIBE_NI_LLAMA);
+            element.click();
+        }
+        else{
+            element = getElementoFromJavaScript(driver, BTN_STEP_2_SIGUIENTE_LARGA_DISTANCIA_ROOT, BTN_STEP_2_SIGUIENTE_LARGA_DISTANCIA);
+            element.click();
+        }
+        generateWord.sendText("Click botón Siguiente Step 2");
+        generateWord.addImageToWord(driver);
+    }
+
+    public void validaCambiosStep3DiagnosticosProblemasVoz(String escenario, String perfil) throws Exception {
+        ///Obtener valor del texto del botón de accion del escenario
+        sleep(2000);
+        WebElement  element =getElementoFromJavaScript(driver,BTN_STEP_3_CONTINUAR_ROOT, BTN_STEP_3_CONTINUAR);
+        String accion= element.getText();
+
+        ///Validar los botones de acción según escenario y perfil
+        validarBtnCambiosStep3DiagnosticosProblemasDatosVoz(escenario,accion,perfil);
+
         ExtentReportUtil.INSTANCE.stepPass(driver, "Validar cambios en el botón de acción del Step 3 diagnósticos de problemas con Voz");
         generateWord.sendText("El botón de acción presentado para el escenario:  "+ escenario +" es correcto" );
         generateWord.addImageToWord(driver);

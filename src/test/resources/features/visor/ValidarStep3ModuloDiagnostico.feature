@@ -14,13 +14,17 @@ Feature: Validar cambios en el Step 3 en los diagnosticos de Datos o Voz
     And   Cerramos el pupUp
     And   Damos click en la opcion Averia
     When  Seleccionamos la opcion Problemas con datos
-    Then  Validar cambios Step 3 en el "<escenario>" diagnosticos problemas de datos con el "<perfil>"
     And   Cierra popUp de ultimos diagnosticos
     And   Se guarda la información del contacto
+    And   Damos click al boton del flujo de datos a ejecutar
+    Then  Validar cambios Step 3 en el "<escenario>" diagnosticos problemas de datos con el "<perfil>"
     And   Cierra la sesion
     Examples:
-      | sTest | tipoUsuario     | usuario     | password     | nroTelefono | perfil   | escenario |
-      | 1     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920951000   | 1ra Linea| 1ra Linea |
+      | sTest | tipoUsuario     | usuario     | password     | nroTelefono | perfil   | escenario         |
+      | 1     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920959136   | 1ra Linea| FCR no recupero info de cliente |
+      | 2     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920959048   | 1ra Linea| FCR no recupero info de cliente |
+      | 3     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920959154   | 1ra Linea| Corte por Robo                  |
+      | 4     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920959335   | 1ra Linea|                                 |
 
   @VISO-3233 @ValidarStep3DiagnosticoVoz
   Scenario Outline: Validar cambios en el Step 3 en los diagnosticos de problemas con voz
@@ -35,10 +39,11 @@ Feature: Validar cambios en el Step 3 en los diagnosticos de Datos o Voz
     And   Cerramos el pupUp
     And   Damos click en la opcion Averia
     When  Seleccionamos la opcion Problemas con voz
-    Then  Validar cambios Step 3 en el "<escenario>" diagnosticos problemas de voz con el "<perfil>"
     And   Cierra popUp de ultimos diagnosticos
     And   Se guarda la información del contacto
+     And   Damos click al boton del "<flujo>" de voz a ejecutar
+    Then  Validar cambios Step 3 en el "<escenario>" diagnosticos problemas de voz con el "<perfil>"
     And   Cierra la sesion
     Examples:
-      | sTest | tipoUsuario     | usuario     | password     | nroTelefono | perfil   | escenario |
-      | 1     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920951000   | 1ra Linea| 1ra Linea |
+      | sTest | tipoUsuario     | usuario     | password     | nroTelefono | perfil   | escenario | flujo |
+      | 1     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920951000   | 1ra Linea| 1ra Linea |Ni recibe ni llama|
