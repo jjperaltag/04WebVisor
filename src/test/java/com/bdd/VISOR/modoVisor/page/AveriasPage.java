@@ -7,10 +7,7 @@ import com.bdd.VISOR.modoVisor.path.ConsultaPath;
 import com.bdd.VISOR.modoVisor.path.HomePath;
 import com.bdd.VISOR.utility.ExtentReportUtil;
 import com.bdd.VISOR.utility.GenerateWord;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -18,6 +15,7 @@ import org.testng.Assert;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 import static com.bdd.VISOR.BaseClass.*;
 import static com.bdd.VISOR.modoVisor.path.AveriasPath.*;
@@ -36,6 +34,7 @@ public class AveriasPage {
     public void clickBotonHerramientas() throws Exception {
         wait.until(ExpectedConditions.visibilityOf(getElement(driver,"id", AveriasPath.BTN_HERRAMIENTAS)));
         getElement(driver,"id", AveriasPath.BTN_HERRAMIENTAS).click();
+        sleep(2000);
         ExtentReportUtil.INSTANCE.stepPass(driver, "Click en el botón Herramientas.");
         generateWord.sendText("Click en el botón Herramientas.");
         generateWord.addImageToWord(driver);
@@ -76,32 +75,48 @@ public class AveriasPage {
     }
 
     public void clickBotonResetTotal() throws Exception {
-        wait.until(ExpectedConditions.visibilityOf(getElement(driver,"id", AveriasPath.BTN_RESET_TOTAL)));
-        getElement(driver,"id", AveriasPath.BTN_RESET_TOTAL).click();
         ExtentReportUtil.INSTANCE.stepPass(driver, "Click en el botón Reset Total.");
         generateWord.sendText("Click en el botón Reset Total.");
         generateWord.addImageToWord(driver);
+        wait.until(ExpectedConditions.visibilityOf(getElement(driver,"xpath", AveriasPath.BTN_RESET_TOTAL)));
+        getElement(driver,"xpath", AveriasPath.BTN_RESET_TOTAL).click();
+        sleep(2000);
     }
 
     public void clickRealizarReset() throws Exception {
-        wait.until(ExpectedConditions.visibilityOf(getElement(driver,"xpath", AveriasPath.BTN_REALIZAR_RESET)));
-        getElement(driver,"xpath", AveriasPath.BTN_REALIZAR_RESET).click();
-        ExtentReportUtil.INSTANCE.stepPass(driver, "Click en el botón Realizar Reset.");
-        generateWord.sendText("Click en el botón Realizar Reset.");
-        generateWord.addImageToWord(driver);
+        boolean btn_SMS = driver.findElements( By.cssSelector(BTN_REALIZAR_RESET_ROOT)).size() != 0;
+        if (Objects.equals(btn_SMS,true)) {
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Click en el botón Realizar Reset.");
+            generateWord.sendText("Click en el botón Realizar Reset.");
+            generateWord.addImageToWord(driver);
+            WebElement element = getElementoFromJavaScript(driver,BTN_REALIZAR_RESET_ROOT, BTN_REALIZAR_RESET);
+            element.click();
+            new WebDriverWait(driver, 300).until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(TIMER_RESET_TOTAL)));
+        }
     }
 
     public void validarMensajeTest() throws Exception {
+        wait.until(ExpectedConditions.visibilityOf(getElement(driver,"xpath",LBL_MENSAJE_TEST)));
         Assert.assertTrue(existElementWaitVisible(driver, AveriasPath.LBL_MENSAJE_TEST));
         ExtentReportUtil.INSTANCE.stepPass(driver, "Validar mensaje de Reset.");
         generateWord.sendText("Validar mensaje de Reset.");
         generateWord.addImageToWord(driver);
+        sleep(1000);
+        getElement(driver,"xpath", BTN_CERRAR_POPUP_MENSAJES).click();
     }
 
     public boolean validarMensajeUsuario(String mensaje){
-        sleep(8000);
         wait.until(ExpectedConditions.visibilityOf(getElement(driver,"xpath",LBL_MENSAJE_USUARIO)));
         String mensajeUI = getElement(driver,"xpath",LBL_MENSAJE_USUARIO).getText();
+        sleep(500);
+        getElement(driver,"xpath", BTN_CERRAR_POPUP_MENSAJES).click();
+        //// VALIDAR SI APARECE POPUP DE VALORACION DE ATENCION
+        boolean btn_salir_atencion = driver.findElements( By.cssSelector(BTN_SALIR_CUENTANOS_SOBRE_ATENCION_ROOT)).size() != 0;
+        if (Objects.equals(btn_salir_atencion,true)) {
+            WebElement element = getElementoFromJavaScript(driver,BTN_SALIR_CUENTANOS_SOBRE_ATENCION_ROOT, BTN_SALIR_CUENTANOS_SOBRE_ATENCION);
+            element.click();
+        }
+
         if (mensaje.equals(mensajeUI)){
             return true;
         } else {
@@ -267,6 +282,12 @@ public class AveriasPage {
                 }
                 break;
             case "Cliente sin saldo":
+                if (!accion.equals("")){
+                    generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
+                    driver.close();
+                }
+                break;
+            case "Sin saldo":
                 if (!accion.equals("")){
                     generateWord.sendText("La acción "+ accion + "presentada para el escenario: "+ escenario + " es incorrecto" );
                     driver.close();
@@ -830,5 +851,5 @@ public class AveriasPage {
         }
 
     }
-    
+
 }

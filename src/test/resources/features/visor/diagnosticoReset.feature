@@ -19,6 +19,7 @@ Feature: Como usuario deseo ingresar a la pagina principal de Visor
     And Seleccionamos la opcion Reset Total
     When Confirmamos dando click en el boton Realizar Test
     Then Se espera el mensaje con el test realizado
+    And  Cierra la sesion
 
     Examples:
       | sTest | tipoUsuario     | usuario     | password       | nroTelefono |
@@ -39,7 +40,7 @@ Feature: Como usuario deseo ingresar a la pagina principal de Visor
     And Seleccionamos la opcion herramientas y seleccionar el boton General
     When Seleccionamos la opcion Reset Total
     Then Se espera el mensaje "<mensaje>" con el test realizado
-
+    And  Cierra la sesion
     Examples:
       | sTest | tipoUsuario     | usuario     | password     | nroTelefono | mensaje                     |
       | 1     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920959470   | Servicio cliente suspendido |
@@ -59,6 +60,7 @@ Feature: Como usuario deseo ingresar a la pagina principal de Visor
     And Seleccionamos la opcion herramientas y seleccionar el boton Datos
     When Seleccionamos la opcion Reset de Datos
     Then Se espera el mensaje "<mensaje>" con el test realizado
+    And  Cierra la sesion
 
     Examples:
       | sTest | tipoUsuario     | usuario     | password     | nroTelefono | mensaje                |
@@ -79,6 +81,7 @@ Feature: Como usuario deseo ingresar a la pagina principal de Visor
     And Seleccionamos la opcion herramientas y seleccionar el boton Datos
     When Seleccionamos la opcion Reset de Datos
     Then Se espera el mensaje "<mensaje>" con el test realizado
+    And  Cierra la sesion
 
     Examples:
       | sTest | tipoUsuario     | usuario     | password     | nroTelefono | mensaje                     |
@@ -100,6 +103,7 @@ Feature: Como usuario deseo ingresar a la pagina principal de Visor
     And Seleccionamos la opcion Reset de voz
     When Confirmamos dando click en el boton Realizar Test
     Then Se espera el mensaje "<mensaje>" con el test realizado
+    And  Cierra la sesion
 
     Examples:
       | sTest | tipoUsuario     | usuario     | password     | nroTelefono | mensaje                |
@@ -120,7 +124,7 @@ Feature: Como usuario deseo ingresar a la pagina principal de Visor
     And Seleccionamos la opcion herramientas y seleccionar el boton Voz
     When Seleccionamos la opcion Reset de voz
     Then Se espera el mensaje "<mensaje>" con el test realizado
-
+    And  Cierra la sesion
     Examples:
       | sTest | tipoUsuario     | usuario     | password     | nroTelefono | mensaje                     |
       | 1     | usuario externo | rdelatorreg | $t3l3f0n1c4$ | 920959470   | Servicio cliente suspendido |

@@ -31,13 +31,11 @@ public class AveriasStepDefinition {
     @When("Confirmamos dando click en el boton Realizar Test")
     public void confirmamosDandoClickEnElBotonRealizarTest() throws Exception {
         averiasStep.clickBotonRealizarReset();
-        //sleep(5000);
     }
 
     @Then("Se espera el mensaje con el test realizado")
     public void seEsperaElMensajeConElTestRealizado() throws Exception {
         averiasStep.validarMensajeTestRealizado();
-        sleep(5000);
     }
 
     @Then("Se espera el mensaje \"([^\"]*)\" con el test realizado")

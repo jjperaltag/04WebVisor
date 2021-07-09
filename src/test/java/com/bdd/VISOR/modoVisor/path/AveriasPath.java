@@ -6,10 +6,11 @@ public class AveriasPath {
     public static String BTN_GENERAL                                  = "//div[@class='btn-group'][1]";
     public static String BTN_DATOS                                    = "//div[@class='btn-group'][2]";
     public static String BTN_VOZ                                      = "//div[@class='btn-group'][3]";
-    public static String BTN_RESET_DE_DATOS                           = "//div/span[contains(text(),'Reset de datos')]";
-    public static String BTN_RESET_DE_VOZ                             = "//div/span[contains(text(),'Reset de voz')]";
-    public static String BTN_RESET_TOTAL                              = "div_card_resetTotal";
-    public static String BTN_REALIZAR_RESET                           = "//div[@class='modal-body']/div/div[@class='btn-rigth']/tdp-st-button";
+    public static String BTN_RESET_DE_DATOS                           = "//*[@id=\"div_card_reset de datos\"]";//"//div/span[contains(text(),'Reset de datos')]";
+    public static String BTN_RESET_DE_VOZ                             = "//*[@id=\"div_card_averiaVoz\"]";//"//div/span[contains(text(),'Reset de voz')]";
+    public static String BTN_RESET_TOTAL                              = "//*[@id=\"div_card_resetTotal\"]";
+    public static String BTN_REALIZAR_RESET_ROOT                      ="body > modal-container > div > div > ng-component > div > div > div.btn-rigth > tdp-st-button";// "//div[@class='modal-body']/div/div[@class='btn-rigth']/tdp-st-button";
+    public static String BTN_REALIZAR_RESET                           ="button > div";
     public static String LBL_MENSAJE_TEST                             = "//h3";
     public static String LBL_MENSAJE_USUARIO                          ="/html/body/modal-container/div/div/ng-component/div/h3"; //"//h3[contains(text(),'Servicio')]";
     public static String LBL_MENSAJE_SERVICIO_NO_DISPONIBLE           = "//h3[contains(text(),'Servicio no disponible')]";
@@ -44,6 +45,10 @@ public class AveriasPath {
     public static String BTN_STEP_2_SIGUIENTE_NI_RECIBE_NI_LLAMA      ="#btn_siguiente_noNavega > div";
     public static String BTN_STEP_2_SIGUIENTE_LARGA_DISTANCIA_ROOT    ="#btn_siguiente_noNavega";
     public static String BTN_STEP_2_SIGUIENTE_LARGA_DISTANCIA         ="#btn_siguiente_noNavega > div";
+    public static String BTN_CERRAR_POPUP_MENSAJES                    ="/html/body/modal-container/div/div/ng-component/div/div[1]";
+    public static String TIMER_RESET_TOTAL                            ="/html/body/visor-root/visor-modal-loader/div/div[2]/p";
+    public static String BTN_SALIR_CUENTANOS_SOBRE_ATENCION_ROOT      ="body > modal-container > div > div > visor-typify-customer-contact > div.modal-footer > div:nth-child(1) > tdp-st-button";
+    public static String BTN_SALIR_CUENTANOS_SOBRE_ATENCION           ="button > div";
 
 }
 
